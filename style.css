@@ -1,3 +1,60 @@
-*{
-    background-color: antiquewhite;
+/* @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"); */
+
+* {
+    background-color: #E6C081;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    gap: 20px;
+}
+
+p{
+    text-align: center;
+    position: relative;
+}
+#image-button {
+    background-image: url(./Images/bitrock1.png);
+    flex-direction: column;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    left: 565px;
+    cursor: pointer;
+    border: none;
+}
+
+#image-button:hover {
+    opacity: 0.8;
+}
+
+.shop-line {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#alert{
+    text-align: center;
+    color: #f7b00a;
+}
+#reset-button {
+    background-color: #712020;
+    color: #e9e9e9;
+}
+@media screen and (max-width: 768px){
+    *{
+        background-color: #f8e30c;
+    }
+    #image-button{
+        position: relative;
+        flex-direction: column-reverse;
+        left: 140px;
+        top: 100px;
+    }
 }
